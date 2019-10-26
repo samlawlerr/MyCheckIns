@@ -17,7 +17,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class CheckInListFragment extends Fragment {
+public class ListUI extends Fragment {
     private RecyclerView mCheckInRecyclerView;
     private CrimeAdapter mAdapter;
 

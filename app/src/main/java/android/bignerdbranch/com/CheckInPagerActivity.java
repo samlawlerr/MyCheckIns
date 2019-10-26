@@ -46,7 +46,7 @@ public class CheckInPagerActivity extends AppCompatActivity {
             @Override
             public Fragment getItem(int position) {
                 CheckIn check = mCheckIns.get(position);
-                return CheckInFragment.newInstance(check.getId());
+                return ItemUI.newInstance(check.getId());
             }
             @Override
             public int getCount() {

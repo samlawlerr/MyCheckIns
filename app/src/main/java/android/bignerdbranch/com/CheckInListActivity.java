@@ -5,7 +5,7 @@ import android.support.v4.app.Fragment;
 public class CheckInListActivity extends SingleFragmentActivity {
     @Override
     protected Fragment createFragment() {
-        return new CheckInListFragment();
+        return new ListUI();
     }
 
 }

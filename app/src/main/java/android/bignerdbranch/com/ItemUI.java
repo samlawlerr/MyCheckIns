@@ -38,7 +38,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
-public class CheckInFragment extends Fragment {
+public class ItemUI extends Fragment {
     private static final String ARG_CHECK_ID = "check_id";
     private static final String DIALOG_DATE = "DialogData";
     private static final int REQUEST_DATE = 0;
@@ -58,10 +58,10 @@ public class CheckInFragment extends Fragment {
     private TextView mLocation;
 
 
-    public static CheckInFragment newInstance(UUID checkID) {
+    public static ItemUI newInstance(UUID checkID) {
         Bundle args = new Bundle();
         args.putSerializable(ARG_CHECK_ID, checkID);
-        CheckInFragment fragment = new CheckInFragment();
+        ItemUI fragment = new ItemUI();
         fragment.setArguments(args);
         return fragment;
     }
@@ -196,7 +196,7 @@ public class CheckInFragment extends Fragment {
                 FragmentManager manager = getFragmentManager();
                 DatePickerFragment dialog = DatePickerFragment
                         .newInstance(mCheckIn.getDate());
-                dialog.setTargetFragment(CheckInFragment.this, REQUEST_DATE);
+                dialog.setTargetFragment(ItemUI.this, REQUEST_DATE);
                 dialog.show(manager, DIALOG_DATE);
             }
         });
