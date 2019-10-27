@@ -102,7 +102,7 @@ public class ListUI extends Fragment {
 
         public CheckInHolder(LayoutInflater inflater, ViewGroup parent) {
 
-            super(inflater.inflate(R.layout.list_item_checkin, parent, false));
+            super(inflater.inflate(R.layout.ListUI, parent, false));
             itemView.setOnClickListener(this);
             mTitleTextView = itemView.findViewById(R.id.check_title);
             mDateTextView =  itemView.findViewById(R.id.check_date);

@@ -125,7 +125,7 @@ public class ItemUI extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_checkin, container, false);
+        View v = inflater.inflate(R.layout.ItemUI, container, false);
 
         PackageManager packageManager = getActivity().getPackageManager();
 
